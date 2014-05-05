@@ -1,0 +1,14 @@
+{
+  "name": "farm-query",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "jade": "*",
+    "mongodb": "^1.4.0",
+    "csv": "^0.3.7"
+  }
+}

@@ -1,0 +1,46 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+
+h2 {
+	text-align: center;
+}
+
+#item {
+	width: 450px;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#year {
+	width: 80px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#commodity {
+	height: 34px;
+}
+
+.state {
+  	fill: lightgrey;
+}
+
+.state-boundary {
+  	fill: none;
+  	stroke: #fff;
+}
+
+#data {
+	display: none;
+}
+
+.msg {
+	color: orange;
+}

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	.container
+		.jumbotron
+			h1= title
+			p.lead Query the agriculture products you're interested. Check the <a href='/list'>product list</a>.
+			.form-container
+				form(action='/', method='post')
+					input#commodity(type='text', name='commodity', placeholder='Apples or ...?')
+					select.form-control#item(name='item')
+					select.form-control#year(name='year')
+					input.btn.btn-success.btn-sm(type='submit', value='Search')
+			br
+			p.lead.msg= msg
+
+		h3= content
+		div#data=JSON.stringify(data)
+		div#result
+	
+	script(src="http://d3js.org/d3.v3.min.js")
+	script(src="http://d3js.org/topojson.v1.min.js")
+	script(src="/javascripts/vis.js")
+	script(src="//code.jquery.com/jquery-1.11.0.min.js")
+	script(src="/javascripts/pullData.js")
